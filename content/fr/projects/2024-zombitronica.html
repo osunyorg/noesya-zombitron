@@ -11,7 +11,7 @@ hugo:
 
 breadcrumbs:
   - title: >-
-      Accueil
+      Zombietron
     path: "/"
   - title: >-
       Projets
@@ -41,9 +41,9 @@ summary: >-
 year: 2024
 date: 2024
 contents_reading_time:
-  seconds: 0
+  seconds: 69
   text: >-
-    moins d'une minute
+    1 minute
 contents:
   - kind: block
     template: video
@@ -67,13 +67,36 @@ contents:
   - kind: block
     template: chapter
     title: >-
-      
+      Comment ça marche ?
     ranks:
-      self: false
+      self: 2
     data:
       layout: no_background
       text: >-
+        <p>&gt; <a href="https://github.com/noesya/zombitronica" target="_blank">Le projet et la documentation sur Github </a><br></p><p><b>Matériel</b> </p><ul> <li>4 téléphones tactiles avec Wi-Fi et navigateur : ce premier prototype utilise les écrans tactiles des téléphones. Les téléphones zombies doivent donc avoir une partie au moins de leur écran tactile qui marche. </li> <li>Routeur : Cette version est basée sur une communication en Web Sockets d'un téléphone à un autre et nécessite donc un <a href="https://fr.wikipedia.org/wiki/Routeur" target="_blank">routeur</a>.</li> <li>Une plaque de plexiglas découpée en fonction de l'interface de contrôle et d'affichage. </li> <li>Une valise </li> <li>Un ampli</li> </ul><p><b>Logiciel </b></p><ul> <li>Le son est généré à partir de la librairie <a href="https://tonejs.github.io/" target="_blank">Tone.js</a> </li> <li>Les interfaces de contrôle sont fabriquées avec la librairie <a href="https://nexus-js.github.io/ui/api/#intro" target="_blank">NexusUI</a> </li> <li>La communication se fait par le réseau local et le protocole <a href="https://fr.wikipedia.org/wiki/WebSocket" target="_blank">WebSocket</a> avec la librairie <a href="https://socket.io/" target="_blank">Socket.IO</a> </li> </ul>
+
+      notes: >-
         
+
+
+      alt: >-
+        
+
+      credit: >-
+        
+
+
+
+  - kind: block
+    template: chapter
+    title: >-
+      Réflexions sur le prototype et améliorations futures
+    ranks:
+      self: 2
+    data:
+      layout: no_background
+      text: >-
+        <ul> <li>Le prototype peut être augmenté avec d'autres fonctionnalités des téléphones : micro, caméra, capteur de lumière, gyroscope, lecteur NFC… (et minimiser le ratio coût énergétique / bénéfice interactif) </li> <li>Le prototype actuel fonctionne avec le navigateur ce qui peut entraîner des limites autant en termes de performance que de robustesse. </li> <li>Les artistes musicaux utilisent des logiciels comme <a href="https://cycling74.com/products/max" target="_blank">Max/MSP</a>, ou <a href="https://puredata.info/" target="_blank">Pure Data </a>qui pourraient être intéressants de coupler avec la machine : par exemple, en permettant une communication via <a href="https://fr.wikipedia.org/wiki/User_Datagram_Protocol" target="_blank">UDP</a> et <a href="https://fr.wikipedia.org/wiki/Open_Sound_Control" target="_blank">Open Sound Control</a> (OSC)</li> <li>Le prototype nécessite un routeur pour permettre la communication, une option serait d'ajouter une <a href="https://fr.wikipedia.org/wiki/Transmission_s%C3%A9rie" target="_blank">communication en serial</a>, une autre serait d'utiliser un des téléphones comme routeur. </li> <li>Gestion du Bluetooth pour automatiquement se connecter à une enceinte Bluetooth</li> </ul>
 
       notes: >-
         
