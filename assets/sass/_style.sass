@@ -1,7 +1,39 @@
+// body
+//     background: linear-gradient(313deg, rgba(238,32,104,1) 0%, rgba(251,144,181,1) 100%)
+//     background: linear-gradient(313deg, rgba(238,32,104,1) 0%, rgba(251,144,181,1) 100%)
+//     main
+//         background: var(--color-background)
+//         margin: pxToRem(12)
+// body
+//     &::after
+//         content: ''
+//         position: fixed
+//         z-index: 10
+//         pointer-events: none
+
+.page__home
+    #document-header
+        nav
+            .container
+                justify-content: end
+        .logo
+            display: none
+    .hero
+        padding-top: 0
+        .content
+            padding-top: 0
+            align-items: center
+            flex-direction: column
+            .hero-text
+                margin-top: 0
+                text-align: center
+            .lead
+                margin-bottom: $spacing-3
 header#document-header
     position: relative
-    
+
 footer#document-footer
+    background: transparent
     background: linear-gradient(313deg, rgba(238,32,104,1) 0%, rgba(251,144,181,1) 100%)
     text-align: right
     padding-bottom: var(--grid-gutter)
