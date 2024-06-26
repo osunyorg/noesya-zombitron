@@ -67,9 +67,10 @@ header#document-header
 footer#document-footer
     background: transparent
     background: linear-gradient(313deg, rgba(238,32,104,1) 0%, rgba(251,144,181,1) 100%)
-    text-align: right
+    text-align: center
     padding-bottom: var(--grid-gutter)
     .logo
+        margin-top: $spacing-7
         border: 1px solid $color-background
         border-radius: $spacing-4
         display: inline-block
@@ -78,9 +79,8 @@ footer#document-footer
         &:hover
             background: $color-background
             color: $color-accent
-
     .container
-        justify-content: end
+        justify-content: center
     .container + .container
         margin-top: $spacing-7
     .nav-legal
