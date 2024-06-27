@@ -13,11 +13,8 @@
 
 .page__home
     #document-header
-        nav
-            .container
-                justify-content: end
         .logo
-            display: none
+            opacity: 0
     .hero
         padding-top: 0
         h1
@@ -25,7 +22,7 @@
             border-radius: $spacing-4
             display: inline-block
             font-weight: normal
-            padding: $spacing-2 $spacing-4
+            padding: $spacing-1 $spacing-4 $spacing-2
             margin-bottom: $spacing-4
             user-select: none
             &:hover
@@ -60,7 +57,7 @@ header#document-header
         border: 1px solid $color-accent
         border-radius: $spacing-4
         display: inline-block
-        padding: $spacing-2 $spacing-4
+        padding: $spacing-1 $spacing-4 $spacing-2
         margin-bottom: $spacing-4
         &:hover
             background: $color-accent
@@ -76,7 +73,7 @@ footer#document-footer
         border: 1px solid $color-background
         border-radius: $spacing-4
         display: inline-block
-        padding: $spacing-2 $spacing-4
+        padding: $spacing-1 $spacing-4 $spacing-2
         margin-bottom: $spacing-4
         &:hover
             background: $color-background
@@ -86,10 +83,22 @@ footer#document-footer
     .container + .container
         margin-top: $spacing-7
     .nav-legal
-        display: flex
-        gap: $spacing-2
-        justify-content: end
-        flex-wrap: wrap
+        display: inline-block
+        &::after
+            content: " — "
+            margin-left: $spacing-2
+            margin-right: $spacing-2
         li
-            margin-top: 0
-
+            display: inline-block
+            a
+                padding-left: $spacing-1
+                padding-right: $spacing-1
+    //     display: flex
+    //     gap: $spacing-2
+    //     justify-content: center
+    //     flex-wrap: wrap
+    //     li
+    //         margin-top: 0
+    .footer-legals,
+    .footer-credit
+        display: inline-block
