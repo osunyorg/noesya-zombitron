@@ -1,15 +1,23 @@
-// body
-//     background: linear-gradient(313deg, rgba(238,32,104,1) 0%, rgba(251,144,181,1) 100%)
-//     background: linear-gradient(313deg, rgba(238,32,104,1) 0%, rgba(251,144,181,1) 100%)
-//     main
-//         background: var(--color-background)
-//         margin: pxToRem(12)
-// body
-//     &::after
-//         content: ''
-//         position: fixed
-//         z-index: 10
-//         pointer-events: none
+@mixin pill
+    border: 1px solid $color-accent
+    border-radius: $spacing-4
+    display: inline-block
+    font-weight: normal
+    padding: $spacing-1 $spacing-4 $spacing-2
+    user-select: none
+    transition: color 0.25s ease
+    &:hover
+        background: linear-gradient(313deg, rgba(238,32,104,1) 0%, rgba(251,144,181,1) 100%)
+        color: $color-background
+        border-color: $color-background
+
+i
+    color: $color-dark-red
+
+header#document-header
+    position: relative
+    .logo
+        @include pill
 
 .page__home
     #document-header
@@ -18,17 +26,9 @@
     .hero
         padding-top: 0
         h1
-            border: 1px solid $color-accent
-            border-radius: $spacing-4
-            display: inline-block
-            font-weight: normal
-            padding: $spacing-1 $spacing-4 $spacing-2
-            margin-bottom: $spacing-4
-            user-select: none
-            &:hover
-                background: $color-accent
-                color: $color-background
-
+            @include pill
+        .lead
+            margin-top: $spacing-4
         .content
             padding-top: 0
             align-items: center
@@ -38,6 +38,7 @@
                 text-align: center
             .lead
                 margin-bottom: $spacing-3
+
 .blocks
     @include full-page
         .heading
@@ -49,35 +50,19 @@
                 padding-left: offset(3)
                 .chapter
                     width: columns(6)
-i
-    color: $color-dark-red
-header#document-header
-    position: relative
-    .logo
-        border: 1px solid $color-accent
-        border-radius: $spacing-4
-        display: inline-block
-        padding: $spacing-1 $spacing-4 $spacing-2
-        margin-bottom: $spacing-4
-        &:hover
-            background: $color-accent
-            color: $color-background
 
 footer#document-footer
     background: transparent
     background: linear-gradient(313deg, rgba(238,32,104,1) 0%, rgba(251,144,181,1) 100%)
     text-align: center
-    padding-bottom: var(--grid-gutter)
     .logo
+        @include pill
         margin-top: $spacing-7
-        border: 1px solid $color-background
-        border-radius: $spacing-4
-        display: inline-block
-        padding: $spacing-1 $spacing-4 $spacing-2
-        margin-bottom: $spacing-4
+        border-color: $color-background
         &:hover
-            background: $color-background
-            color: $color-accent
+            background: $color-green-3
+            color: $color-text
+            border-color: $color-green-3
     .container
         justify-content: center
     .container + .container
@@ -91,14 +76,7 @@ footer#document-footer
         li
             display: inline-block
             a
-                padding-left: $spacing-1
-                padding-right: $spacing-1
-    //     display: flex
-    //     gap: $spacing-2
-    //     justify-content: center
-    //     flex-wrap: wrap
-    //     li
-    //         margin-top: 0
+                padding-left: $spacing-2
     .footer-legals,
     .footer-credit
         display: inline-block
