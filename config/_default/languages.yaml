@@ -11,8 +11,8 @@ fr:
   permalinks:
     projects: /projets/:year-:slug/
     projects_categories: /projets/:slug/
-    organizations: /organisations/:slug/
-    organizations_categories: /organisations/categories/:slug/
+    organizations: /parties-prenantes/:slug/
+    organizations_categories: /parties-prenantes/categories/:slug/
   taxonomies:
     administrator: administrators
     author: authors
