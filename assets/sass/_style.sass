@@ -7,7 +7,7 @@
     user-select: none
     transition: color 0.25s ease
     &:hover
-        background: linear-gradient(313deg, rgba(238,32,104,1) 0%, rgba(251,144,181,1) 100%)
+        background: linear-gradient(313deg, #ff5017 0%, #ff4ac3 100%)
         color: $color-background
         border-color: $color-background
 
@@ -55,6 +55,7 @@ header#document-header
                 text-align: center
             .lead
                 margin-bottom: $spacing-3
+            
 
 .blocks
     @include full-page
@@ -67,17 +68,28 @@ header#document-header
                 padding-left: offset(3)
                 .chapter
                     width: columns(6)
+                    display: flex
+                    flex-direction: column
+                    figure
+                        margin: auto
+                        min-width: 30%
+                        max-width: 50%
+                        margin-top: $spacing-4
+                    .media
+                        display: none
             &-projects
                 &--large
                     .large 
-                        //padding-left: offset(3)
+                        padding-left: offset(3)
                         .project
+                            
                             .media
                                 width: columns(3)
+                                
 
 footer#document-footer
     background: transparent
-    background: linear-gradient(313deg, rgba(238,32,104,1) 0%, rgba(251,144,181,1) 100%)
+    background: linear-gradient(-313deg, #ff5017 -10%, #ff4ac3 110%)
     text-align: center
     .logo
         @include pill
