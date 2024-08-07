@@ -1,3 +1,4 @@
+
 @mixin pill
     border: 1px solid $color-accent
     border-radius: $spacing-4
@@ -53,6 +54,13 @@ header#document-header
             .hero-text
                 margin-top: 0
                 text-align: center
+            figure
+                border: 1px solid #4513b2
+                figcaption
+                    &::before
+                        background: none
+                    .credit-content
+                        background: none
             .lead
                 margin-bottom: $spacing-3
             
@@ -69,12 +77,20 @@ header#document-header
                 .chapter
                     width: columns(6)
                     display: flex
-                    //flex-direction: column
-                    figure
-                        //margin: auto
+                    flex-direction: column
+                    figure.image-portrait
+                        border: 1px solid #4513b2
+                        margin: auto
+                        margin-top: $spacing-4
                         min-width: 20%
                         max-width: 40%
-                        //margin-top: $spacing-4
+                    figure.image-landscape
+                        border: 1px solid #4513b2
+                        margin: auto
+                        margin-top: $spacing-4
+                        min-width: 80%
+                        max-width: 100%
+
                     .media
                         display: none
             &-projects
@@ -82,9 +98,9 @@ header#document-header
                     .large 
                         padding-left: offset(3)
                         .project
-                            
-                            .media
-                                width: columns(3)
+                           .media
+                                width: columns(4)
+                                border: 1px solid #4513b2
                                 
 
 footer#document-footer
