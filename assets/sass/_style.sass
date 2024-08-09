@@ -64,9 +64,13 @@ header#document-header
             
 
 .blocks
-    figure
-        #image-portrait
-            max-height: none
+    .block-image
+        .image-portrait
+            img
+                max-height: none
+
+
+
     @include full-page
         .heading
             h2
@@ -79,13 +83,13 @@ header#document-header
                     width: columns(6)
                     display: flex
                     flex-direction: column
-                    figure.image-portrait
+                    .image-portrait
                         border: 1px solid #4513b2
                         margin: auto
                         margin-top: $spacing-4
                         min-width: 20%
                         max-width: 40%
-                    figure.image-landscape
+                    .image-landscape
                         border: 1px solid #4513b2
                         margin: auto
                         margin-top: $spacing-4
