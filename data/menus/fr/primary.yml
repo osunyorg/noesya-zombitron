@@ -5,4 +5,8 @@ items:
   target: "/projets/"
   kind: page
   children: []
+- title: Journal de bord
+  target: "/actualites/"
+  kind: page
+  children: []
 
