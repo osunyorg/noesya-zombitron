@@ -54,7 +54,7 @@ header_cta:
     
   target: ""
 contents_reading_time:
-  seconds: 101
+  seconds: 102
   text: >-
     2 minutes
 contents:
@@ -187,9 +187,40 @@ contents:
 
   - kind: heading
     title: >-
+      Journal de bord
+    slug: "journal-de-bord"
+    position: 4
+    rank: 2
+  - kind: block
+    template: posts
+    title: >-
+      
+    ranks:
+      self: false
+      children: 3
+    data:
+      mode: all
+      all: true
+      layout: list
+      options:
+        author: true
+        categories: false
+        date: true
+        image: true
+        reading_time: false
+        summary: true
+
+      posts:
+        - "2024/2024-08-08-design-du-boitier-modulaire"
+        - "2024/2024-07-10-residence-a-villette-makerz"
+
+
+
+  - kind: heading
+    title: >-
       En savoir plus
     slug: "en-savoir-plus"
-    position: 4
+    position: 5
     rank: 2
   - kind: block
     template: chapter
