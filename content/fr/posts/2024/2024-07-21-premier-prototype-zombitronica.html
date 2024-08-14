@@ -47,9 +47,9 @@ summary: >-
   Nous détaillons ici les étapes de réalisation de notre premier prototype, ainsi que les opportunités et les limites qu'il nous a permis d'identifier.
 
 contents_reading_time:
-  seconds: 503
+  seconds: 526
   text: >-
-    8 minutes
+    9 minutes
 contents:
   - kind: block
     template: video
@@ -313,6 +313,29 @@ contents:
       layout: alt_background
       text: >-
         <p><b>Simplicité : le dispositif doit pouvoir être assemblé, allumé et éteint facilement. </b><br></p><p>La manière dont nous avons conçu le support qui maintient les téléphones présente des limites : lors du premier calage des téléphones sous la plaque, il faut adapter le positionnement des interfaces sur l'écran (dont les dimensions sont variables en fonction des modèles de smartphone), et ainsi procéder à différentes itérations de la feuille de style CSS. Cela implique d'actualiser la page web, et donc de pouvoir manipuler les téléphones, ce qui est difficile et chronophage avec le support actuel. </p><p>Une alternative est de repenser le système de maintien pour permettre une manipulation plus facile des téléphones, ou bien de permettre le contrôle des téléphones à distance. </p><p>Une autre limite imposée par le format Web est la nécessaire action de l'utilisateur..ice pour permettre l'activation de certaines fonctions. C'est le cas de l'activation de l'audio (<a href="https://developer.mozilla.org/fr/docs/Web/API/Web_Audio_API" target="_blank">Web Audio API</a>) et de la mise en plein écran de la page (<a href="https://developer.mozilla.org/fr/docs/Web/API/Fullscreen_API" target="_blank">Fullscreen API</a>). Néanmoins, cela pose un problème uniquement au démarrage du Zombitronica. </p>
+
+      notes: >-
+        
+
+
+      alt: >-
+        
+
+      credit: >-
+        
+
+
+
+  - kind: block
+    template: chapter
+    title: >-
+      
+    ranks:
+      self: false
+    data:
+      layout: alt_background
+      text: >-
+        <p><b>Interopérabilité</b><b> : les Zombitrons doivent pouvoir être déclinés ou adaptés sur le maximum d'appareils obsolètes possibles.</b><br></p><p>Le choix d'implémentation logiciel s'est porté sur la technologie web, permettant ainsi à tous les smartphones disposant d'un navigateur d'être utilisé pour l'assemblage du Zombitronica (y compris les iPhone). Cependant certaines choses ne sont pas possibles avec toutes les version d'OS, comme par exemple la <a href="https://developer.mozilla.org/fr/docs/Web/API/Fullscreen_API#api.element.requestfullscreen" target="_blank">mise en plein écran de la page </a><a href="https://developer.mozilla.org/fr/docs/Web/API/Fullscreen_API#api.element.requestfullscreen" target="_blank">sur les smartphones IOS avant 2018</a> (version de Safari IOS - 12).</p>
 
       notes: >-
         
