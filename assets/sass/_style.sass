@@ -1,4 +1,3 @@
-
 @mixin pill
     border: 1px solid $color-accent
     border-radius: $spacing-4
@@ -14,8 +13,7 @@
 
 h1,
 h2,
-h3,
-p
+h3
     letter-spacing: 0.02rem
 i
     a
@@ -30,7 +28,6 @@ i
             padding: $spacing-3
 
 header#document-header
-    position: relative
     .logo
         background: linear-gradient(313deg, #ff5017 0%, #ff4ac3 100%)
         color: white
@@ -38,10 +35,8 @@ header#document-header
 
 .page__home
     .hero
-        padding-top: 0
         .content
             padding-left: offset(3)
-            padding-top: 0
             flex-direction: column
             .hero-text
                 h1
@@ -88,9 +83,6 @@ header#document-header
                                 border: 1px solid $color-purple
                                 border-radius: $spacing-1
             &-posts
-                // padding-left: offset(3)
-                // .post
-                //     width: columns(7)
                 .media
                     border-radius: $spacing-1
 
