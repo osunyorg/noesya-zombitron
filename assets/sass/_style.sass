@@ -39,26 +39,32 @@ header#document-header
 .page__home
     .hero
         padding-top: 0
-        h1
-            margin-top: $spacing-4
-            margin-bottom: $spacing-4
         .content
+            padding-left: offset(3)
             padding-top: 0
-            align-items: center
             flex-direction: column
             .hero-text
-                text-align: center
-
+                h1
+                    margin-bottom: $spacing-4
+            figure
+                width: columns(4)
+                img
+                    border: 1px solid $color-purple
+.hero
+    figure
+        picture
+            img
+                border-radius: $spacing-1
 .blocks
     .block-image
         .image-portrait
             img
                 max-height: none
-
     @include full-page
         .heading
             h2
                 padding-left: offset(3)
+                width: columns(10)
 
         .block
             &-chapter
@@ -67,21 +73,11 @@ header#document-header
                     width: columns(6)
                     display: flex
                     flex-direction: column
-                    .image-portrait
-                        border: 1px solid #4513b2
-                        margin: auto
+                    figure
                         margin-top: $spacing-4
-                        min-width: 20%
-                        max-width: 40%
-                    .image-landscape
-                        border: 1px solid #4513b2
-                        margin: auto
-                        margin-top: $spacing-4
-                        min-width: 80%
-                        max-width: 100%
-
-                    .media
-                        display: none
+                        img
+                            border: 1px solid $color-purple
+                            border-radius: $spacing-1
             &-projects
                 &--large
                     .large 
@@ -89,11 +85,14 @@ header#document-header
                         .project
                             .media
                                 width: columns(4)
-                                border: 1px solid #4513b2
+                                border: 1px solid $color-purple
+                                border-radius: $spacing-1
             &-posts
-                padding-left: offset(3)
-                .post
-                    width: columns(7)   
+                // padding-left: offset(3)
+                // .post
+                //     width: columns(7)
+                .media
+                    border-radius: $spacing-1
 
 footer#document-footer
     background: transparent
