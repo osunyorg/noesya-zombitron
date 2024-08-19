@@ -9,15 +9,15 @@ fr:
   params:
     social:
   permalinks:
-    posts: /actualites/:year-:month-:day-:slug/
-    posts_categories: /actualites/:slug/
+    posts: /journaldebord/:year-:month-:day-:slug/
+    posts_categories: /journaldebord/:slug/
     projects: /projets/:year-:slug/
     projects_categories: /projets/:slug/
     organizations: /parties-prenantes/:slug/
     organizations_categories: /parties-prenantes/categories/:slug/
     persons: /equipe/:slug/
     persons_categories: /equipe/categories/:slug/
-    authors: /equipe/:slug/actualites/
+    authors: /equipe/:slug/journaldebord/
   taxonomies:
     administrator: administrators
     author: authors

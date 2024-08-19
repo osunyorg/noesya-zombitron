@@ -6,7 +6,7 @@ items:
   kind: page
   children: []
 - title: Journal de bord
-  target: "/actualites/"
+  target: "/journaldebord/"
   kind: page
   children: []
 
