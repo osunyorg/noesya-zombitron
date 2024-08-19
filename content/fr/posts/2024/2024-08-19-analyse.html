@@ -42,9 +42,9 @@ summary: >-
   
 
 contents_reading_time:
-  seconds: 143
+  seconds: 191
   text: >-
-    2 minutes
+    3 minutes
 contents:
   - kind: block
     template: chapter
@@ -102,6 +102,29 @@ contents:
       layout: alt_background
       text: >-
         <p><b>Robustesse : le dispositif doit être solide pour pouvoir être utilisé par le public.</b><br></p><p>Ce prototype nous permet d'identifier plusieurs limites logicielles et matérielles compromettant la robustesse. D'abord, le choix d'implémentation sous format page Web sur des smartphones anciens, et donc dotés d'une faible puissance de calcul par rapport aux produits actuels, nous contraint à des applications légères. <br>Dans notre cas, nous avons dû alléger drastiquement l'usage de <a href="https://tonejs.github.io/docs/15.0.4/index.html" target="_blank">Tone.js</a> dont les 4 instruments sur 5 jouent des sons pré-enregistrés. Nous avons également été contraintes de limiter l'ajout de filtres sur les sons qui permettent de donner un éventail plus large de possibilités de jeu. </p><p>La seconde grande limite à la robustesse est liée à la puissance du signal Wifi des smartphones dans le cas où le réseau local est généré par l'un d'entre eux. Nous nous sommes aperçues que dans les lieux où de nombreux réseaux Wifi sont détectables, une forte latence et des déconnexions intempestives apparaissent. Une alternative à explorer serait de changer le mode de communication, et de passer par un protocole sériel par le câble USB des smartphones. </p><p>Enfin, la robustesse de notre premier prototype est limitée par le système de fixation des smartphones. Les différents smartphones ne font pas la même épaisseur, et ont tendance pour certains à glisser lors de la manipulation des interfaces tactiles. Il serait donc intéressant d'explorer comment améliorer le support actuel avec des entretoises de longueur différentes et peut-être ajouter un revêtement antidérapant, ou bien de penser le système de fixation d'une autre manière, inspiré des systèmes d'attaches universels existants sur le marché (pour les voitures ou les vélos par exemple). <br></p>
+
+      notes: >-
+        
+
+
+      alt: >-
+        
+
+      credit: >-
+        
+
+
+
+  - kind: block
+    template: chapter
+    title: >-
+      
+    ranks:
+      self: false
+    data:
+      layout: alt_background
+      text: >-
+        <p><b>Simplicité : le dispositif doit pouvoir être assemblé, allumé et éteint facilement. </b><br></p><p>La manière dont nous avons conçu le support qui maintient les smartphones présente des limites : lors du premier calage des smartphones sous la plaque, il faut adapter le positionnement des interfaces sur l'écran (dont les dimensions sont variables en fonction des modèles de smartphone), et ainsi procéder à différentes itérations de la feuille de style CSS. Cela implique d'actualiser la page WEB, et donc de pouvoir manipuler les smartphones, ce qui est difficile et chronophage avec le support actuel. </p><p>Une alternative est de repenser le système de maintien pour permettre une manipulation plus facile des smartphones, ou bien de permettre le contrôle des smartphones à distance. </p><p>Une autre limite imposée par le format WEB est la nécessaire action de l'utilisateur·ice pour permettre l'activation de certaines fonctions. C'est le cas de l'activation de l'audio (<a href="https://developer.mozilla.org/fr/docs/Web/API/Web_Audio_API" target="_blank">Web Audio API</a>) et de la mise en plein écran de la page (<a href="https://developer.mozilla.org/fr/docs/Web/API/Fullscreen_API" target="_blank">Fullscreen API</a>). Néanmoins, cela pose un problème uniquement au démarrage du Zombitronica. </p>
 
       notes: >-
         
