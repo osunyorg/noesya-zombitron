@@ -32,17 +32,14 @@ i
 header#document-header
     position: relative
     .logo
+        background: linear-gradient(313deg, #ff5017 0%, #ff4ac3 100%)
+        color: white
         @include pill
 
 .page__home
-    #document-header
-        .logo
-            opacity: 0
     .hero
         padding-top: 0
         h1
-            @include pill
-        .lead
             margin-top: $spacing-4
             margin-bottom: $spacing-4
         .content
@@ -50,23 +47,13 @@ header#document-header
             align-items: center
             flex-direction: column
             .hero-text
-                margin-top: 0
                 text-align: center
-            figure
-                figcaption
-                    &::before
-                        background: none
-                    .credit-content
-                        background: none
-            
 
 .blocks
     .block-image
         .image-portrait
             img
                 max-height: none
-
-
 
     @include full-page
         .heading
