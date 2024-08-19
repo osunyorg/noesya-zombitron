@@ -47,9 +47,9 @@ summary: >-
   Nous détaillons ici les étapes de réalisation de notre premier prototype, ainsi que les opportunités et les limites qu'il nous a permis d'identifier.
 
 contents_reading_time:
-  seconds: 232
+  seconds: 132
   text: >-
-    4 minutes
+    2 minutes
 contents:
   - kind: block
     template: chapter
@@ -61,52 +61,6 @@ contents:
       layout: no_background
       text: >-
         <p>Notre première semaine de <a href="https://www.zombitron.org/actualites/2024-07-10-residence-a-villette-makerz/" target="_blank">résidence</a> à Villette Makerz a été consacrée à la finalisation du premier prototype <a href="https://www.zombitron.org/projets/2024-zombitronica/" target="_blank">Zombitronica</a>. Nous avons conçu ce prototype à partir d'une application web, permettant la création d'interfaces tactiles via le navigateur et la génération de son à partir d'une librairie <a href="https://developer.mozilla.org/fr/docs/Web/API/Web_Audio_API" target="_blank">WebAudio</a>.</p>
-
-      notes: >-
-        
-
-
-      alt: >-
-        
-
-      credit: >-
-        
-
-
-
-  - kind: block
-    template: chapter
-    title: >-
-      
-    ranks:
-      self: false
-    data:
-      layout: alt_background
-      text: >-
-        <p><b>Robustesse : le dispositif doit être solide pour pouvoir être utilisé par le public.</b><br></p><p>Ce prototype nous permet d'identifier plusieurs limites logicielles et matérielles compromettant la robustesse. D'abord, le choix d'implémentation sous format page Web sur des smartphones anciens, et donc dotés d'une faible puissance de calcul par rapport aux produits actuels, nous contraint à des applications légères. <br>Dans notre cas, nous avons dû alléger drastiquement l'usage de <a href="https://tonejs.github.io/docs/15.0.4/index.html" target="_blank">Tone.js</a> dont les 4 instruments sur 5 jouent des sons pré-enregistrés. Nous avons également été contraintes de limiter l'ajout de filtres sur les sons qui permettent de donner un éventail plus large de possibilités de jeu. </p><p>La seconde grande limite à la robustesse est liée à la puissance du signal Wifi des smartphones dans le cas où le réseau local est généré par l'un d'entre eux. Nous nous sommes aperçues que dans les lieux où de nombreux réseaux Wifi sont détectables, une forte latence et des déconnexions intempestives apparaissent. Une alternative à explorer serait de changer le mode de communication, et de passer par un protocole sériel par le câble USB des smartphones. </p><p>Enfin, la robustesse de notre premier prototype est limitée par le système de fixation des smartphones. Les différents smartphones ne font pas la même épaisseur, et ont tendance pour certains à glisser lors de la manipulation des interfaces tactiles. Il serait donc intéressant d'explorer comment améliorer le support actuel avec des entretoises de longueur différentes et peut-être ajouter un revêtement antidérapant, ou bien de penser le système de fixation d'une autre manière, inspiré des systèmes d'attaches universels existants sur le marché (pour les voitures ou les vélos par exemple). <br></p>
-
-      notes: >-
-        
-
-
-      alt: >-
-        
-
-      credit: >-
-        
-
-
-
-  - kind: block
-    template: chapter
-    title: >-
-      
-    ranks:
-      self: false
-    data:
-      layout: alt_background
-      text: >-
-        <p><b>Interopérabilité</b><b> : les Zombitrons doivent pouvoir être déclinés ou adaptés sur le maximum d'appareils obsolètes possibles.</b><br></p><p>Le choix d'implémentation logiciel s'est porté sur la technologie WEB, permettant ainsi à tous les smartphones disposant d'un navigateur d'être utilisé pour l'assemblage du Zombitronica (y compris les iPhone). Cependant certaines choses ne sont pas possibles avec toutes les version d'OS, comme par exemple la <a href="https://developer.mozilla.org/fr/docs/Web/API/Fullscreen_API#api.element.requestfullscreen" target="_blank">mise en plein écran de la page </a><a href="https://developer.mozilla.org/fr/docs/Web/API/Fullscreen_API#api.element.requestfullscreen" target="_blank">sur les smartphones IOS avant 2018</a> (version de Safari IOS - 12).</p>
 
       notes: >-
         
