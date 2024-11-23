@@ -15,6 +15,9 @@ fr:
     posts_categories: /journaldebord/:slug/
     organizations: /parties-prenantes/:slug/
     organizations_categories: /parties-prenantes/categories/:slug/
+    persons: /equipe/:slug/
+    persons_categories: /equipe/categories/:slug/
+    authors: /equipe/:slug/journaldebord/
   taxonomies:
     administrator: administrators
     author: authors
