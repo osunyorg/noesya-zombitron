@@ -4,12 +4,14 @@ items:
 - title: Projets
   target: "/projets/"
   kind: page
+  new_tab: false
   children: []
   path: "/projects"
   file: content/fr/projects/_index.html
 - title: Journal de bord
   target: "/journaldebord/"
   kind: page
+  new_tab: false
   children: []
   path: "/posts"
   file: content/fr/posts/_index.html
