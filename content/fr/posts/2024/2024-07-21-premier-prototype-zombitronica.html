@@ -21,6 +21,17 @@ meta:
     created_at: 2024-08-13T13:46:04+02:00
     updated_at: 2024-09-30T11:20:37+02:00
     published_at: 2024-07-21T00:00:00+02:00
+search:
+  id: "af914178-bde1-450b-9cd9-44c2956f589c"
+  url: "/journaldebord/2024-07-21-premier-prototype-zombitronica/"
+  kind: "Communication::Website::Post::Localization"
+  lang: "fr"
+  title: >-
+    Étapes de fabrication
+  summary: >-
+    <p>Nous détaillons ici les étapes de réalisation du premier prototype de Zombitronica. </p>
+  body: >-
+    Notre première semaine de résidence à Villette Makerz a été consacrée à la finalisation du premier prototype Zombitronica. Nous avons conçu ce prototype à partir d'une application web, permettant la création d'interfaces tactiles via le navigateur et la génération de son à partir d'une librairie WebAudio.<br><br><br><br><br><br>Materiel <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>Logiciel <br>Une application Node.js exécute un serveur http permettant l'affichage de différentes interfaces sur chaque smartphone, et d'un serveur Websockets permettant la communication des smartphones entre eux. Le son est généré à partir de la librairie Tone.js. Le serveur Node.js peut être exécuté sur un smartphone (Android via l'application Termux par exemple), ou bien sur un ordinateur. Tous les appareils doivent être connectés en Wifi au même réseau local, soit par l'intermédiaire d'un router, soit par un partage de connexion d'un des smartphones. Le code source et les instructions d'installation sont disponibles sur notre github.<br><br><br><br><br><br>Design de l'interface  <br>L'interface a été conçue de manière à explorer différents types de contrôleurs tactiles pour générer de la musique. Elle est composée d'un séquenceur, permettant de sélectionner les notes jouées par les 4 instruments sur 8 temps, de 4 sliders pour le contrôle du volume de chacun des instruments, d'un slider sur deux dimensions permettant de contrôler un 5 ieme instrument (sa hauteur de notes et son volume) et de 3 potentiomètres contrôlant la vitesse du métronome, la distorsion et la reverbe. <br><br><br><br><br><br> <br><br><br><br><br>Découpe du support et assemblage <br>Nous avons découpé à la découpeuse laser une plaque de plexiglas qui délimite les zones d'écran correspondant aux interfaces de contrôle, et qui assure le maintien en place des 4 smartphones et du haut-parleur. Chaque composant repose sur une plaque suspendue à la plaque supérieure par un système de vis, écrous et entretoises. Chacun des 4 smartphones est maintenu en charge par un câble connecté au secteur via le Hub USB. Le smartphone qui génère la musique est connecté au haut-parleur par son câble jack. <br><br><br><br><br><br> <br><br><br><br><br> <br>L'enceinte est désossée, puis soudée une fois que les deux haut-parleurs et la carte électronique sont fixés sur le support en plexiglas.
 
 breadcrumbs:
   - title: >-
