@@ -10,17 +10,6 @@ fr:
   params:
     contact_details:
 
-  permalinks:
-    pages_categories: /:slug/
-    projects: /projets/:year-:slug/
-    projects_categories: /projets/:slug/
-    posts: /journaldebord/:year-:month-:day-:slug/
-    posts_categories: /journaldebord/:slug/
-    organizations: /parties-prenantes/:slug/
-    organizations_categories: /parties-prenantes/categories/:slug/
-    persons: /equipe/:slug/
-    persons_categories: /equipe/categories/:slug/
-    authors: /equipe/:slug/journaldebord/
   taxonomies:
     administrator: administrators
     author: authors
