@@ -33,7 +33,7 @@ search:
   summary: >-
     <p>Nous analysons les opportunités et les limites du premier prototype de Zombitronica en fonction de nos 5 critères.</p>
   body: >-
-    <p>Réemploi : tout le matériel utilisé est issu du réemploi dans la mesure du possible.  <br>Tous les smartphones, le haut-parleur et la valise sont issus du réemploi.  Le système d'assemblage est composé de visserie dont une partie a été trouvée dans des boites de vrac de Villette Makerz, et une autre achetée neuve.  La planche en plexiglas a été achetée neuve.  Il est néanmoins possible de trouver des chutes dans des lieux dédiés au réemploi de matériaux, comme la  Réserve des arts  ou via des ressources telles que l' écothèque  par exemple. Il faut cependant faire attention, car les matériaux trouvés en vrac peuvent  ne pas être compatibles avec la découpeuse laser , particulièrement dans le cas de plastiques. Nous avons dû acheter une multiprise USB neuve, parce que nous n'en avons pas déniché d'occasion. Une alternative possible est de souder les différents câbles USB entre eux, puisqu'ils ne servent qu'à l'alimentation des smartphones.</p>  <p> Esthétique : on ne doit pas forcément savoir que le dispositif est conçu à partir de vieux objets électroniques.  <br>Nous avons conçu un boitier permettant d'intégrer tous les composants sous la forme d'un nouvel objet. La plaque en plexiglas a été choisie semi-transparente dans une volonté de démonstration, mais peut très bien être choisie opaque ou d'un autre matériau comme le bois, pour entièrement dissimuler les composants en dessous.</p>  <p> Robustesse : le dispositif doit être solide pour pouvoir être utilisé par le public.  <br>Ce prototype nous permet d'identifier plusieurs limites logicielles et matérielles compromettant la robustesse. D'abord, le choix d'implémentation sous format page Web sur des smartphones anciens, et donc dotés d'une faible puissance de calcul par rapport aux produits actuels, nous contraint à des applications légères. Dans notre cas, nous avons dû alléger drastiquement l'usage de  Tone.js  dont les 4 instruments sur 5 jouent des sons pré-enregistrés. Nous avons également été contraintes de limiter l'ajout de filtres sur les sons qui permettent de donner un éventail plus large de possibilités de jeu.  La seconde grande limite à la robustesse est liée à la puissance du signal Wifi des smartphones dans le cas où le réseau local est généré par l'un d'entre eux. Nous nous sommes aperçues que dans les lieux où de nombreux réseaux Wifi sont détectables, une forte latence et des déconnexions intempestives apparaissent. Une alternative à explorer serait de changer le mode de communication, et de passer par un protocole sériel par le câble USB des smartphones.  Enfin, la robustesse de notre premier prototype est limitée par le système de fixation des smartphones. Les différents smartphones ne font pas la même épaisseur, et ont tendance pour certains à glisser lors de la manipulation des interfaces tactiles. Il serait donc intéressant d'explorer comment améliorer le support actuel avec des entretoises de longueur différentes et peut-être ajouter un revêtement antidérapant, ou bien de penser le système de fixation d'une autre manière, inspiré des systèmes d'attaches universels existants sur le marché (pour les voitures ou les vélos par exemple). </p>  <p> Simplicité : le dispositif doit pouvoir être assemblé, allumé et éteint facilement.   <br>La manière dont nous avons conçu le support qui maintient les smartphones présente des limites : lors du premier calage des smartphones sous la plaque, il faut adapter le positionnement des interfaces sur l'écran (dont les dimensions sont variables en fonction des modèles de smartphone), et ainsi procéder à différentes itérations de la feuille de style CSS. Cela implique d'actualiser la page WEB, et donc de pouvoir manipuler les smartphones, ce qui est difficile et chronophage avec le support actuel.  Une alternative est de repenser le système de maintien pour permettre une manipulation plus facile des smartphones, ou bien de permettre le contrôle des smartphones à distance.  Une autre limite imposée par le format WEB est la nécessaire action de l'utilisateur·ice pour permettre l'activation de certaines fonctions. C'est le cas de l'activation de l'audio ( Web Audio API ) et de la mise en plein écran de la page ( Fullscreen API ). Néanmoins, cela pose un problème uniquement au démarrage du Zombitronica. </p>  <p> Interopérabilité : les Zombitrons doivent pouvoir être déclinés ou adaptés sur le maximum d'appareils obsolètes possibles.  <br>Le choix d'implémentation logiciel s'est porté sur la technologie WEB, permettant ainsi à tous les smartphones disposant d'un navigateur d'être utilisé pour l'assemblage du Zombitronica (y compris les iPhone). Cependant certaines choses ne sont pas possibles avec toutes les version d'OS, comme par exemple la  mise en plein écran de la page  sur les smartphones IOS avant 2018  (version de Safari IOS - 12).</p>
+    <p>Réemploi : tout le matériel utilisé est issu du réemploi dans la mesure du possible.  <br>Tous les smartphones, le haut-parleur et la valise sont issus du réemploi.  Le système d'assemblage est composé de visserie dont une partie a été trouvée dans des boites de vrac de Villette Makerz, et une autre achetée neuve.  La planche en plexiglas a été achetée neuve.  Il est néanmoins possible de trouver des chutes dans des lieux dédiés au réemploi de matériaux, comme la  Réserve des arts  ou via des ressources telles que l' écothèque  par exemple. Il faut cependant faire attention, car les matériaux trouvés en vrac peuvent  ne pas être compatibles avec la découpeuse laser , particulièrement dans le cas de plastiques. Nous avons dû acheter une multiprise USB neuve, parce que nous n'en avons pas déniché d'occasion. Une alternative possible est de souder les différents câbles USB entre eux, puisqu'ils ne servent qu'à l'alimentation des smartphones.</p>  <p> Esthétique : on ne doit pas forcément savoir que le dispositif est conçu à partir de vieux objets électroniques.  <br>Nous avons conçu un boitier permettant d'intégrer tous les composants sous la forme d'un nouvel objet. La plaque en plexiglas a été choisie semi-transparente dans une volonté de démonstration, mais peut très bien être choisie opaque ou d'un autre matériau comme le bois, pour entièrement dissimuler les composants en dessous.</p>  <p> Robustesse : le dispositif doit être solide pour pouvoir être utilisé par le public.  <br>Ce prototype nous permet d'identifier plusieurs limites logicielles et matérielles compromettant la robustesse. D'abord, le choix d'implémentation sous format page Web sur des smartphones anciens, et donc dotés d'une faible puissance de calcul par rapport aux produits actuels, nous contraint à des applications légères. Dans notre cas, nous avons dû alléger drastiquement l'usage de  Tone.js  dont les 4 instruments sur 5 jouent des sons pré-enregistrés. Nous avons également été contraintes de limiter l'ajout de filtres sur les sons qui permettent de donner un éventail plus large de possibilités de jeu.  La seconde grande limite à la robustesse est liée à la puissance du signal Wifi des smartphones dans le cas où le réseau local est généré par l'un d'entre eux. Nous nous sommes aperçues que dans les lieux où de nombreux réseaux Wifi sont détectables, une forte latence et des déconnexions intempestives apparaissent. Une alternative à explorer serait de changer le mode de communication, et de passer par un protocole sériel par le câble USB des smartphones.  Enfin, la robustesse de notre premier prototype est limitée par le système de fixation des smartphones. Les différents smartphones ne font pas la même épaisseur, et ont tendance pour certains à glisser lors de la manipulation des interfaces tactiles. Il serait donc intéressant d'explorer comment améliorer le support actuel avec des entretoises de longueur différentes et peut-être ajouter un revêtement antidérapant, ou bien de penser le système de fixation d'une autre manière, inspiré des systèmes d'attaches universels existants sur le marché (pour les voitures ou les vélos par exemple). </p>  <p> Simplicité : le dispositif doit pouvoir être assemblé, allumé et éteint facilement.   <br>La manière dont nous avons conçu le support qui maintient les smartphones présente des limites : lors du premier calage des smartphones sous la plaque, il faut adapter le positionnement des interfaces sur l'écran (dont les dimensions sont variables en fonction des modèles de smartphone), et ainsi procéder à différentes itérations de la feuille de style CSS. Cela implique d'actualiser la page WEB, et donc de pouvoir manipuler les smartphones, ce qui est difficile et chronophage avec le support actuel.  Une alternative est de repenser le système de maintien pour permettre une manipulation plus facile des smartphones, ou bien de permettre le contrôle des smartphones à distance.  Une autre limite imposée par le format WEB est la nécessaire action de l'utilisateur·ice pour permettre l'activation de certaines fonctions. C'est le cas de l'activation de l'audio ( Web Audio API ) et de la mise en plein écran de la page ( Fullscreen API ). Néanmoins, cela pose un problème uniquement au démarrage du Zombitronica. </p>  <p> Interopérabilité : les Zombitrons doivent pouvoir être déclinés ou adaptés sur le maximum d'appareils obsolètes possibles.  <br>Le choix d'implémentation logiciel s'est porté sur la technologie WEB, permettant ainsi à tous les smartphones disposant d'un navigateur d'être utilisé pour l'assemblage du Zombitronica (y compris les iPhone). Cependant certaines choses ne sont pas possibles avec toutes les version d'OS, comme par exemple la  mise en plein écran de la page  sur les smartphones IOS avant 2018  (version de Safari IOS - 12).</p>
 
 breadcrumbs:
   - title: >-
@@ -94,7 +94,7 @@ contents:
   - kind: block
     template: chapter
     title: >-
-      Réemploi : tout le matériel utilisé est issu du réemploi dans la mesure du possible.
+      Réemploi : tout le matériel utilisé est issu du réemploi dans la mesure du possible.
     slug: >-
       reemploi-tout-le-materiel-utilise-est-issu-du-reemploi-dans-la-mesure-du-possible
     ranks:
@@ -104,7 +104,7 @@ contents:
       active: true
       title: 
         value: >-
-          Réemploi : tout le matériel utilisé est issu du réemploi dans la mesure du possible.
+          Réemploi : tout le matériel utilisé est issu du réemploi dans la mesure du possible.
         heading: 2
     data:
       layout: no_background
@@ -126,7 +126,7 @@ contents:
   - kind: block
     template: chapter
     title: >-
-      Esthétique : on ne doit pas forcément savoir que le dispositif est conçu à partir de vieux objets électroniques.
+      Esthétique : on ne doit pas forcément savoir que le dispositif est conçu à partir de vieux objets électroniques.
     slug: >-
       esthetique-on-ne-doit-pas-forcement-savoir-que-le-dispositif-est-concu-a-partir-de-vieux-objets-electroniques
     ranks:
@@ -136,7 +136,7 @@ contents:
       active: true
       title: 
         value: >-
-          Esthétique : on ne doit pas forcément savoir que le dispositif est conçu à partir de vieux objets électroniques.
+          Esthétique : on ne doit pas forcément savoir que le dispositif est conçu à partir de vieux objets électroniques.
         heading: 2
     data:
       layout: no_background
@@ -158,7 +158,7 @@ contents:
   - kind: block
     template: chapter
     title: >-
-      Robustesse : le dispositif doit être solide pour pouvoir être utilisé par le public.
+      Robustesse : le dispositif doit être solide pour pouvoir être utilisé par le public.
     slug: >-
       robustesse-le-dispositif-doit-etre-solide-pour-pouvoir-etre-utilise-par-le-public
     ranks:
@@ -168,7 +168,7 @@ contents:
       active: true
       title: 
         value: >-
-          Robustesse : le dispositif doit être solide pour pouvoir être utilisé par le public.
+          Robustesse : le dispositif doit être solide pour pouvoir être utilisé par le public.
         heading: 2
     data:
       layout: no_background
@@ -190,7 +190,7 @@ contents:
   - kind: block
     template: chapter
     title: >-
-      Simplicité : le dispositif doit pouvoir être assemblé, allumé et éteint facilement.
+      Simplicité : le dispositif doit pouvoir être assemblé, allumé et éteint facilement.
     slug: >-
       simplicite-le-dispositif-doit-pouvoir-etre-assemble-allume-et-eteint-facilement
     ranks:
@@ -200,12 +200,12 @@ contents:
       active: true
       title: 
         value: >-
-          Simplicité : le dispositif doit pouvoir être assemblé, allumé et éteint facilement.
+          Simplicité : le dispositif doit pouvoir être assemblé, allumé et éteint facilement.
         heading: 2
     data:
       layout: no_background
       text: >-
-        <p>La manière dont nous avons conçu le support qui maintient les smartphones présente des limites : lors du premier calage des smartphones sous la plaque, il faut adapter le positionnement des interfaces sur l'écran (dont les dimensions sont variables en fonction des modèles de smartphone), et ainsi procéder à différentes itérations de la feuille de style CSS. Cela implique d'actualiser la page WEB, et donc de pouvoir manipuler les smartphones, ce qui est difficile et chronophage avec le support actuel. </p><p>Une alternative est de repenser le système de maintien pour permettre une manipulation plus facile des smartphones, ou bien de permettre le contrôle des smartphones à distance. </p><p>Une autre limite imposée par le format WEB est la nécessaire action de l'utilisateur·ice pour permettre l'activation de certaines fonctions. C'est le cas de l'activation de l'audio (<a href="https://developer.mozilla.org/fr/docs/Web/API/Web_Audio_API" target="_blank" rel="noreferrer">Web Audio API <span class="sr-only">(lien externe)</span></a>) et de la mise en plein écran de la page (<a href="https://developer.mozilla.org/fr/docs/Web/API/Fullscreen_API" target="_blank" rel="noreferrer">Fullscreen API <span class="sr-only">(lien externe)</span></a>). Néanmoins, cela pose un problème uniquement au démarrage du Zombitronica. </p>
+        <p>La manière dont nous avons conçu le support qui maintient les smartphones présente des limites : lors du premier calage des smartphones sous la plaque, il faut adapter le positionnement des interfaces sur l'écran (dont les dimensions sont variables en fonction des modèles de smartphone), et ainsi procéder à différentes itérations de la feuille de style CSS. Cela implique d'actualiser la page WEB, et donc de pouvoir manipuler les smartphones, ce qui est difficile et chronophage avec le support actuel. </p><p>Une alternative est de repenser le système de maintien pour permettre une manipulation plus facile des smartphones, ou bien de permettre le contrôle des smartphones à distance. </p><p>Une autre limite imposée par le format WEB est la nécessaire action de l'utilisateur·ice pour permettre l'activation de certaines fonctions. C'est le cas de l'activation de l'audio (<a href="https://developer.mozilla.org/fr/docs/Web/API/Web_Audio_API" target="_blank" rel="noreferrer">Web Audio API <span class="sr-only">(lien externe)</span></a>) et de la mise en plein écran de la page (<a href="https://developer.mozilla.org/fr/docs/Web/API/Fullscreen_API" target="_blank" rel="noreferrer">Fullscreen API <span class="sr-only">(lien externe)</span></a>). Néanmoins, cela pose un problème uniquement au démarrage du Zombitronica. </p>
 
       notes: >-
         
@@ -222,7 +222,7 @@ contents:
   - kind: block
     template: chapter
     title: >-
-      Interopérabilité : les Zombitrons doivent pouvoir être déclinés ou adaptés sur le maximum d'appareils obsolètes possibles.
+      Interopérabilité : les Zombitrons doivent pouvoir être déclinés ou adaptés sur le maximum d'appareils obsolètes possibles.
     slug: >-
       interoperabilite-les-zombitrons-doivent-pouvoir-etre-declines-ou-adaptes-sur-le-maximum-d-appareils-obsoletes-possibles
     ranks:
@@ -232,7 +232,7 @@ contents:
       active: true
       title: 
         value: >-
-          Interopérabilité : les Zombitrons doivent pouvoir être déclinés ou adaptés sur le maximum d'appareils obsolètes possibles.
+          Interopérabilité : les Zombitrons doivent pouvoir être déclinés ou adaptés sur le maximum d'appareils obsolètes possibles.
         heading: 2
     data:
       layout: no_background
