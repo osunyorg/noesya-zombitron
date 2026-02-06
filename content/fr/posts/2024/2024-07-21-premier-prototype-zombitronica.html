@@ -1,10 +1,10 @@
 ---
 title: >-
   Étapes de fabrication
-subtitle: >-
-  
-bodyclass: >-
-   
+
+
+
+
 url: "/journaldebord/2024-07-21-premier-prototype-zombitronica/"
 slug: "premier-prototype-zombitronica"
 aliases:
@@ -35,14 +35,11 @@ search:
     <p>  <br>Notre première semaine de  résidence  à Villette Makerz a été consacrée à la finalisation du premier prototype  Zombitronica . Nous avons conçu ce prototype à partir d'une application web, permettant la création d'interfaces tactiles via le navigateur et la génération de son à partir d'une librairie  WebAudio .</p>  <p> Materiel </p>  <p> Logiciel  <br>Une application  Node.js  exécute un serveur  http  permettant l'affichage de différentes interfaces sur chaque smartphone, et d'un serveur  Websockets  permettant la communication des smartphones entre eux. Le son est généré à partir de la librairie  Tone.js . Le serveur Node.js peut être exécuté sur un smartphone (Android via l'application  Termux  par exemple), ou bien sur un ordinateur. Tous les appareils doivent être connectés en Wifi au même réseau local, soit par l'intermédiaire d'un router, soit par un partage de connexion d'un des smartphones.  Le code source et les instructions d'installation sont disponibles sur  notre github .</p>  <p> Design de l'interface   <br>L'interface a été conçue de manière à explorer différents types de contrôleurs tactiles pour générer de la musique.  Elle est composée d'un séquenceur, permettant de sélectionner les notes jouées par les 4 instruments sur 8 temps, de 4 sliders pour le contrôle du volume de chacun des instruments, d'un slider sur deux dimensions permettant de contrôler un 5 ieme instrument (sa hauteur de notes et son volume) et de 3 potentiomètres contrôlant la vitesse du métronome, la distorsion et la reverbe. </p>  <p> Découpe du support et assemblage  <br>Nous avons découpé à la découpeuse laser une plaque de plexiglas qui délimite les zones d'écran correspondant aux interfaces de contrôle, et qui assure le maintien en place des 4 smartphones et du haut-parleur. Chaque composant repose sur une plaque suspendue à la plaque supérieure par un système de vis, écrous et entretoises. Chacun des 4 smartphones est maintenu en charge par un câble connecté au secteur via le Hub USB. Le smartphone qui génère la musique est connecté au haut-parleur par son câble jack. </p>  <p>   <br>L'enceinte est désossée, puis soudée une fois que les deux haut-parleurs et la carte électronique sont fixés sur le support en plexiglas.</p>
 
 breadcrumbs:
-  - title: >-
-      Accueil
+  - title: "Accueil"
     path: "/"
-  - title: >-
-      Journal de bord
+  - title: "Journal de bord"
     path: "/journaldebord/"
-  - title: >-
-      Étapes de fabrication
+  - title: "Étapes de fabrication"
 
 design:
   full_width: false
@@ -57,25 +54,23 @@ translationKey: communication-website-post-408c66f3-90f3-4797-851f-30405a769df1
 image:
   id: "02a22e7c-01a3-4c7c-9099-b261f3cc1145"
   alt: ""
-  credit: >-
-    
 
 
-meta_description: >-
-  
+
 
 summary: >-
   <p>Nous détaillons ici les étapes de réalisation du premier prototype de Zombitronica. </p>
-
 header_cta:
 
 posts_categories:
   - "zombitronica"
 taxonomies:
-  - name: >-
-      Catégories
-    slug: ""
+  - permalink: ""
     path: ""
+    slug: ""
+    file: ""
+    name: >-
+      Catégories
     categories:
       - permalink: "/journaldebord/zombitronica/"
         path: "/posts_categories/zombitronica"
@@ -92,28 +87,20 @@ contents_reading_time:
 contents:
   - kind: block
     template: chapter
-    title: >-
-      
-    slug: >-
-      
+
+
     ranks:
       base: 2
     top:
       active: false
+
     data:
       layout: no_background
       text: >-
         <p>Notre première semaine de <a href="https://www.zombitron.org/actualites/2024-07-10-residence-a-villette-makerz/" target="_blank" rel="noreferrer">résidence <span class="sr-only">(lien externe)</span></a> à Villette Makerz a été consacrée à la finalisation du premier prototype <a href="https://www.zombitron.org/projets/2024-zombitronica/" target="_blank" rel="noreferrer">Zombitronica <span class="sr-only">(lien externe)</span></a>. Nous avons conçu ce prototype à partir d'une application web, permettant la création d'interfaces tactiles via le navigateur et la génération de son à partir d'une librairie <a href="https://developer.mozilla.org/fr/docs/Web/API/Web_Audio_API" target="_blank" rel="noreferrer">WebAudio <span class="sr-only">(lien externe)</span></a>.</p>
 
-      notes: >-
-        
 
 
-      alt: >-
-        
-
-      credit: >-
-        
 
 
 
@@ -132,9 +119,8 @@ contents:
         value: >-
           Materiel
         heading: 2
+
     data:
-      description: >-
-        
 
       columns:
         - ""
@@ -152,8 +138,6 @@ contents:
         - ["Plaque Plexiglass 3mm 600 x 600","30 euros"]
         - ["1 Hub USB acheté neuf ","~10 euros"]
         - ["Visserie"]
-      caption: >-
-        
 
 
 
@@ -172,20 +156,14 @@ contents:
         value: >-
           Logiciel
         heading: 2
+
     data:
       layout: no_background
       text: >-
         <p>Une application<a target="_blank" rel="noreferrer"> Node.js  <span class="sr-only">(lien externe)</span></a>exécute un serveur <a href="https://fr.wikipedia.org/wiki/Hypertext_Transfer_Protocol" target="_blank" rel="noreferrer">http <span class="sr-only">(lien externe)</span></a> permettant l'affichage de différentes interfaces sur chaque smartphone, et d'un serveur <a href="https://fr.wikipedia.org/wiki/WebSocket" target="_blank" rel="noreferrer">Websockets <span class="sr-only">(lien externe)</span></a> permettant la communication des smartphones entre eux. Le son est généré à partir de la librairie <a target="_blank" rel="noreferrer">Tone.js <span class="sr-only">(lien externe)</span></a>. Le serveur Node.js peut être exécuté sur un smartphone (Android via l'application <a href="https://termux.dev/en/" target="_blank" rel="noreferrer">Termux <span class="sr-only">(lien externe)</span></a> par exemple), ou bien sur un ordinateur. Tous les appareils doivent être connectés en Wifi au même réseau local, soit par l'intermédiaire d'un router, soit par un partage de connexion d'un des smartphones. </p><p>Le code source et les instructions d'installation sont disponibles sur <a href="https://github.com/noesya/zombitronica" target="_blank" rel="noreferrer">notre github <span class="sr-only">(lien externe)</span></a>.</p>
 
-      notes: >-
-        
 
 
-      alt: >-
-        
-
-      credit: >-
-        
 
 
 
@@ -204,46 +182,31 @@ contents:
         value: >-
           Design de l'interface
         heading: 2
+
     data:
       layout: no_background
       text: >-
         <p>L'interface a été conçue de manière à explorer différents types de contrôleurs tactiles pour générer de la musique. </p><p>Elle est composée d'un séquenceur, permettant de sélectionner les notes jouées par les 4 instruments sur 8 temps, de 4 sliders pour le contrôle du volume de chacun des instruments, d'un slider sur deux dimensions permettant de contrôler un 5 ieme instrument (sa hauteur de notes et son volume) et de 3 potentiomètres contrôlant la vitesse du métronome, la distorsion et la reverbe. </p>
 
-      notes: >-
-        
 
 
-      alt: >-
-        
-
-      credit: >-
-        
 
 
 
   - kind: block
     template: image
-    title: >-
-      
-    slug: >-
-      
+
+
     ranks:
       base: 2
     top:
       active: false
+
     data:
-      text: >-
-        
 
       image:
         id: "2a596d1e-511c-4e3e-a7a2-09c95d2a13dc"
-        file: "2a596d1e-511c-4e3e-a7a2-09c95d2a13dc"
 
-        alt: >-
-          
-
-        credit: >-
-          
 
 
 
@@ -262,139 +225,89 @@ contents:
         value: >-
           Découpe du support et assemblage
         heading: 2
+
     data:
       layout: no_background
       text: >-
         <p>Nous avons découpé à la découpeuse laser une plaque de plexiglas qui délimite les zones d'écran correspondant aux interfaces de contrôle, et qui assure le maintien en place des 4 smartphones et du haut-parleur. Chaque composant repose sur une plaque suspendue à la plaque supérieure par un système de vis, écrous et entretoises. Chacun des 4 smartphones est maintenu en charge par un câble connecté au secteur via le Hub USB. Le smartphone qui génère la musique est connecté au haut-parleur par son câble jack. </p>
 
-      notes: >-
-        
 
 
-      alt: >-
-        
-
-      credit: >-
-        
 
 
 
   - kind: block
     template: image
-    title: >-
-      
-    slug: >-
-      
+
+
     ranks:
       base: 2
     top:
       active: false
+
     data:
-      text: >-
-        
 
       image:
         id: "39a3c4e2-2ef1-4927-a06d-7efbe77ba1c2"
-        file: "39a3c4e2-2ef1-4927-a06d-7efbe77ba1c2"
 
-        alt: >-
-          
-
-        credit: >-
-          
 
 
 
   - kind: block
     template: chapter
-    title: >-
-      
-    slug: >-
-      
+
+
     ranks:
       base: 2
     top:
       active: false
+
     data:
       layout: no_background
       text: >-
         <p>L'enceinte est désossée, puis soudée une fois que les deux haut-parleurs et la carte électronique sont fixés sur le support en plexiglas.</p>
 
-      notes: >-
-        
 
 
-      alt: >-
-        
-
-      credit: >-
-        
 
 
 
   - kind: block
     template: gallery
-    title: >-
-      
-    slug: >-
-      
+
+
     ranks:
       base: 2
     top:
       active: false
+
     data:
-      description: >-
-        
 
       layout: grid
       images:
-        - id: "4ae844b2-406b-4678-b406-6ac54e7e60a0"
-          file: "4ae844b2-406b-4678-b406-6ac54e7e60a0"
+        - 
+          image:
+            id: "4ae844b2-406b-4678-b406-6ac54e7e60a0"
 
-          alt: >-
-            
 
-          credit: >-
-            
 
-          text: >-
-            
+        - 
+          image:
+            id: "74f3f08e-4516-4b7d-92a5-39f50cc520d1"
 
-        - id: "74f3f08e-4516-4b7d-92a5-39f50cc520d1"
-          file: "74f3f08e-4516-4b7d-92a5-39f50cc520d1"
 
-          alt: >-
-            
 
-          credit: >-
-            
+        - 
+          image:
+            id: "c4aebf56-9f7e-479b-8ed9-afa6fa0c204c"
 
-          text: >-
-            
 
-        - id: "c4aebf56-9f7e-479b-8ed9-afa6fa0c204c"
-          file: "c4aebf56-9f7e-479b-8ed9-afa6fa0c204c"
 
-          alt: >-
-            
+        - 
+          image:
+            id: "e66759ff-8b9d-4714-8c83-ef37c5e6c5bd"
 
-          credit: >-
-            
 
-          text: >-
-            
-
-        - id: "e66759ff-8b9d-4714-8c83-ef37c5e6c5bd"
-          file: "e66759ff-8b9d-4714-8c83-ef37c5e6c5bd"
-
-          alt: >-
-            
-
-          credit: >-
-            
-
-          text: >-
-            
 
 
 
