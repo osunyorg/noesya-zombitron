@@ -15,70 +15,70 @@ for = ["**/*.png", "**/*.jpg", "**/*.jpeg", "**/*.gif", "**/*.webp"]
 Cache-Control = "max-age=31536000, no-transform, public"
 
 [[redirects]]
-from = "/actualites/2024-08-19-analyse/index.html"
+from = "/actualites/2024-08-19-analyse/"
 to = "/journaldebord/2024-08-14-analyse/"
 
 [[redirects]]
-from = "/actualites/2024-06-27-premiere-demo-zombitronica/index.html"
+from = "/actualites/2024-06-27-premiere-demo-zombitronica/"
 to = "/journaldebord/2024-06-27-premiere-demo-zombitronica/"
 
 [[redirects]]
-from = "/actualites/2024-08-06-video-du-zombitronica/index.html"
+from = "/actualites/2024-08-06-video-du-zombitronica/"
 to = "/journaldebord/2024-08-06-demo-du-zombitronica/"
 
 [[redirects]]
-from = "/organisations/volumique/index.html"
+from = "/organisations/volumique/"
 to = "/parties-prenantes/volumique/"
 
 [[redirects]]
-from = "/actualites/2024-08-06-demo-du-zombitronica/index.html"
+from = "/actualites/2024-08-06-demo-du-zombitronica/"
 to = "/journaldebord/2024-08-06-demo-du-zombitronica/"
 
 [[redirects]]
-from = "/actualites/zombitronica/index.html"
+from = "/actualites/zombitronica/"
 to = "/journaldebord/zombitronica/"
 
 [[redirects]]
-from = "/equipe/clara-rigaud/actualites/index.html"
+from = "/equipe/clara-rigaud/actualites/"
 to = "/equipe/clara-rigaud/journaldebord/"
 
 [[redirects]]
-from = "/organisations/noesya/index.html"
+from = "/organisations/noesya/"
 to = "/parties-prenantes/noesya/"
 
 [[redirects]]
-from = "/projets/2024-zombichord-1/index.html"
+from = "/projets/2024-zombichord-1/"
 to = "/projets/2024-zombichord/"
 
 [[redirects]]
-from = "/actualites/2024-07-10-residence-a-villette-makerz/index.html"
+from = "/actualites/2024-07-10-residence-a-villette-makerz/"
 to = "/journaldebord/2024-07-10-residence-a-villette-makerz/"
 
 [[redirects]]
-from = "/equipe/marion-jolas/actualites/index.html"
+from = "/equipe/marion-jolas/actualites/"
 to = "/equipe/marion-jolas/journaldebord/"
 
 [[redirects]]
-from = "/actualites/2024-08-08-zombitronica-retours-residence-juillet-2024/index.html"
+from = "/actualites/2024-08-08-zombitronica-retours-residence-juillet-2024/"
 to = "/journaldebord/2024-08-08-design-du-boitier-modulaire/"
 
 [[redirects]]
-from = "/organisations/index.html"
+from = "/organisations/"
 to = "/parties-prenantes/"
 
 [[redirects]]
-from = "/actualites/2024-08-14-analyse/index.html"
+from = "/actualites/2024-08-14-analyse/"
 to = "/journaldebord/2024-08-14-analyse/"
 
 [[redirects]]
-from = "/actualites/2024-08-08-design-du-boitier-modulaire/index.html"
+from = "/actualites/2024-08-08-design-du-boitier-modulaire/"
 to = "/journaldebord/2024-08-08-design-du-boitier-modulaire/"
 
 [[redirects]]
-from = "/actualites/index.html"
+from = "/actualites/"
 to = "/journaldebord/"
 
 [[redirects]]
-from = "/actualites/2024-07-21-premier-prototype-zombitronica/index.html"
+from = "/actualites/2024-07-21-premier-prototype-zombitronica/"
 to = "/journaldebord/2024-07-21-premier-prototype-zombitronica/"
 
