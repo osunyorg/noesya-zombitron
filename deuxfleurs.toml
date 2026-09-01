@@ -27,6 +27,10 @@ from = "/actualites/2024-08-06-video-du-zombitronica/index.html"
 to = "/journaldebord/2024-08-06-demo-du-zombitronica/"
 
 [[redirects]]
+from = "/fichiers/2026/index.html"
+to = "/fichiers/2026/zombichord-propositionpdf/"
+
+[[redirects]]
 from = "/organisations/volumique/index.html"
 to = "/parties-prenantes/volumique/"
 
