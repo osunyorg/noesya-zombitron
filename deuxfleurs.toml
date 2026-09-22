@@ -75,6 +75,10 @@ from = "/actualites/2024-08-14-analyse/index.html"
 to = "/journaldebord/2024-08-14-analyse/"
 
 [[redirects]]
+from = "/parties-prenantes/categories/clients/index.html"
+to = "/parties-prenantes/categories/client/"
+
+[[redirects]]
 from = "/actualites/2024-08-08-design-du-boitier-modulaire/index.html"
 to = "/journaldebord/2024-08-08-design-du-boitier-modulaire/"
 
